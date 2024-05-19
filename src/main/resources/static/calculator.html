@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="calculator.js" defer></script>
+    <title>asn1</title>
+  </head>
+  <body>
+    <div id="outer-container">
+      <div id="outer-wrapper">
+        <div id="inner-container">
+          <hr id="top-hr" />
+          <div id="inner-wrapper">
+            <div id="calculator-container">
+              <h1 id="title">Grade Calculator</h1>
+              <div id="activity">
+                <h2 id="activity-title">Activities</h2>
+                <p id="activity-desc">Give grades to the numeric activities:</p>
+                <table>
+                  <tbody>
+                    <tr id="title-row">
+                      <th>Name</th>
+                      <th>Short name</th>
+                      <th>Weight</th>
+                      <th>Grade</th>
+                      <th>Percent</th>
+                    </tr>
+                  </tbody>
+                  <tbody id="activity-container">
+                    <tr id="activity-1">
+                      <td>Activity 1</td>
+                      <td>A1</td>
+                      <td>
+                        <input
+                          type="number"
+                          min="0"
+                          id="weight-input-1"
+                          class="input"
+                        />
+                      </td>
+                      <td>
+                        <div class="grade-container" data-id="1">
+                          <input
+                            type="number"
+                            min="0"
+                            id="grade-input-1"
+                            oninput="calculatePercentage(this)"
+                            class="input"
+                          />
+                          <p class="grade-input-seperator">/</p>
+                          <input
+                            type="number"
+                            min="0"
+                            id="max-grade-input-1"
+                            oninput="calculatePercentage(this)"
+                            class="input"
+                          />
+                        </div>
+                      </td>
+                      <td id="percentage-1"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button id="add-row-btn">ADD ROW</button>
+                <div id="result-container">
+                  <div id="result">
+                    <h2>Result</h2>
+                    <p id="calculated-result"></p>
+                  </div>
+                  <div id="calculate-btn-container">
+                    <button class="calculate-btn" id="calculate-weight-btn">
+                      WEIGHTED
+                    </button>
+                    <button class="calculate-btn" id="calculate-mean-btn">
+                      MEAN
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr id="bottom-hr" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

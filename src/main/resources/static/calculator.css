@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  overflow: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#outer-container {
+  height: 100dvh;
+  padding: 10px;
+}
+
+#outer-wrapper {
+  height: 100%;
+  background-color: #a6192d;
+  border-radius: 5px;
+}
+
+#inner-container {
+  margin: 0 auto;
+  width: 90%;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+#inner-wrapper {
+  padding: 2rem;
+  background-color: white;
+}
+
+#top-hr {
+  height: 2rem;
+  border: none;
+  background-color: #3d3935;
+}
+
+#bottom-hr {
+  height: 3rem;
+  border: none;
+  background-color: #3d3935;
+}
+
+#calculator-container {
+  width: 72rem;
+  margin-top: 2rem;
+}
+
+#title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  margin-bottom: 1rem;
+}
+
+#activity {
+  border: 1px solid #c2c1c3;
+  background-color: #e9eff1;
+  padding: 1rem;
+}
+
+#activity-title {
+  color: #b4131c;
+  margin: 1rem 0 1.5rem 0;
+}
+
+#activity-desc {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+th,
+td {
+  font-size: large;
+  text-align: start;
+  border: 1px solid #c5c4c6;
+  padding: 0 10px 0 10px;
+  width: 14rem;
+}
+
+#title-row {
+  height: 1.8rem;
+  background-color: #dddddd;
+}
+
+#title-row th {
+  font-weight: bolder;
+}
+
+.grade-container {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.grade-input-seperator {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+#weight-input {
+  margin-top: 0.5rem;
+}
+
+.input {
+  height: 2.5rem;
+  width: 3.3rem;
+  border-radius: 5px;
+  border: 2px solid #b0b3b4;
+}
+
+#add-row-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  height: 1.5rem;
+  width: 5.5rem;
+}
+
+#result-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  margin: 1rem 0 1rem 0;
+}
+
+#result {
+  flex-basis: 70%;
+}
+
+#result h2 {
+  color: #b4131c;
+}
+
+#calculate-btn-container {
+  align-self: flex-end;
+}
+
+.calculate-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  padding: 0 10px 0 10px;
+  margin: 0 5px 0 5px;
+  min-width: 6rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #b4131c;
+}
