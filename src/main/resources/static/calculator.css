@@ -3,6 +3,7 @@
 * {
   overflow: auto;
   box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
   padding: 0;
 }
@@ -105,8 +106,7 @@ td {
 }
 
 .grade-input-seperator {
-  font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 0.5rem;
   margin-left: 0.2rem;
   margin-right: 0.2rem;
